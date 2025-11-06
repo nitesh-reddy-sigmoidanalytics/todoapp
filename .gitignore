@@ -68,7 +68,6 @@ coverage.xml
 
 # --- FastAPI specific ---
 # If you generate OpenAPI docs or static builds:
-static/
 docs/_build/
 *.generated.json
 

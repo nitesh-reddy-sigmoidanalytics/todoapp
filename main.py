@@ -15,9 +15,9 @@ app.mount(
 )
 
 
-@app.get("/")
-def home(Request:Request):
-  return templates.TemplateResponse("home.html",{"request":Request})
+# @app.get("/")
+# def home(Request:Request):
+#   return templates.TemplateResponse("home.html",{"request":Request})
 
 
 
