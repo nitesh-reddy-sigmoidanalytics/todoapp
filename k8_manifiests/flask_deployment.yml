@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flaskapp
+  template:
+    metadata:
+      name: flask-pod
+      labels:
+        app: flaskapp
+    spec:
+      containers:
+        - name: flask-cont
+          image: rutuacr.azurecr.io/todoapp:latest
+          ports:
+            - containerPort: 5000
+          envFrom:
+          - secretRef:
+              name: postgres-secret
+          - configMapRef:
+              name: postgres-config

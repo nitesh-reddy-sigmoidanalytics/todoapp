@@ -1,0 +1,91 @@
+# =====================================
+# Python / FastAPI project .gitignore
+# =====================================
+
+# --- Python build files ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pdb
+
+# --- Virtual environments ---
+venv/
+.env/
+env/
+.venv/
+ENV/
+Pipfile.lock
+poetry.lock
+
+# --- dotenv / environment files ---
+.env
+.env.local
+.env.dev
+.env.prod
+.env.test
+
+# --- Logs & runtime data ---
+*.log
+*.pid
+*.seed
+*.out
+*.err
+*.sqlite3
+instance/
+*.db
+
+# --- Compiled / temporary files ---
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+.eggs/
+pip-wheel-metadata/
+wheelhouse/
+*.manifest
+*.spec
+
+# --- IDE & editor files ---
+.vscode/
+.idea/
+*.swp
+*~
+.project
+.pydevproject
+
+# --- Test & coverage files ---
+.coverage
+.tox/
+.nox/
+.cache/
+pytest_cache/
+htmlcov/
+coverage.xml
+
+# --- FastAPI specific ---
+# If you generate OpenAPI docs or static builds:
+static/
+docs/_build/
+*.generated.json
+
+# --- Docker ---
+*.dockerfile
+Dockerfile.*
+docker-compose.override.yml
+docker-compose.local.yml
+
+# --- Kubernetes ---
+*.yaml.backup
+*.yml.backup
+.kube/
+helm/
+charts/
+secrets.yaml
+secret.yaml
+config.yaml
+
+# --- Node / Frontend (if using React/Vue with FastAPI backen
