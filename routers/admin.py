@@ -9,7 +9,7 @@ from routers.auth import get_current_user
 
 
 
-router=APIRouter(
+router=APIRouter (
   prefix="/admin",
   tags=["admin"]
 )
